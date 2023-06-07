@@ -52,6 +52,7 @@ brew install kubectl
 brew install kubectx
 brew install awscli
 brew install --cask lens
+brew install openshift-cli
 
 # Communication
 
