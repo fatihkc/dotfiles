@@ -23,9 +23,6 @@ brew install findutils
 # Install a modern version of Bash.
 brew install bash
 
-# Install `wget` with IRI support.
-brew install wget --with-iri
-
 # Install GnuPG to enable PGP-signing commits.
 brew install gnupg
 
@@ -54,6 +51,7 @@ brew install terraform
 brew install kubectl
 brew install kubectx
 brew install awscli
+brew install --cask lens
 
 # Communication
 
