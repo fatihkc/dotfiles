@@ -43,7 +43,7 @@ brew install ssh-copy-id
 brew install --cask visual-studio-code
 brew install --cask termius
 
-# DevOps tools
+# DevOps
 
 brew install --cask docker
 brew install helm
@@ -53,6 +53,10 @@ brew install kubectx
 brew install awscli
 brew install --cask lens
 brew install openshift-cli
+
+# DevSecOps 
+
+brew install trivy
 
 # Communication
 
