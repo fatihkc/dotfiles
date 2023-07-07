@@ -1,9 +1,13 @@
-#!/usr/bin/env bash
+#!/usr/bin/bash
 
-# Install command-line tools using Homebrew.
+# Check for Homebrew, install if we don't have it
+if test ! $(which brew); then
+    echo "Installing homebrew..."
+    /bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh)"
+fi
 
 # Make sure we’re using the latest Homebrew.
-brew update
+#brew update
 
 # Upgrade any already-installed formulae.
 brew upgrade
@@ -31,17 +35,17 @@ brew install vim
 brew install grep
 brew install openssh
 brew install screen
-
-# Install font tools.
-brew tap bramstein/webfonttools
-brew install sfnt2woff
-brew install sfnt2woff-zopfli
-brew install woff2
+brew install --cask iterm2
+brew install zsh
 
 brew install git
 brew install ssh-copy-id
 brew install --cask visual-studio-code
 brew install --cask termius
+
+# Code
+
+brew install hugo
 
 # DevOps
 
@@ -67,6 +71,7 @@ brew install --cask microsoft-teams
 
 brew install --cask google-chrome
 brew install --cask spotify
+brew install --cask grammarly
 
 # Remove outdated versions from the cellar.
 brew cleanup
