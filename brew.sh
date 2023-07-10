@@ -57,7 +57,9 @@ brew install kubectx
 brew install awscli
 brew install --cask lens
 brew install openshift-cli
-
+brew install --cask vagrant
+brew install ansible
+brew install --cask virtualbox
 # DevSecOps 
 
 brew install trivy
