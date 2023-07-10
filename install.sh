@@ -1,14 +1,16 @@
 #!/bin/bash
 
-#Create dotfiles if not exist
-if [ ! -d ~/dotfiles ]; then
-    mkdir ~/dotfiles
+#Create dotfiles_old if not exist
+if [ ! -d ~/dotfiles_old ]; then
+    echo "Creating ~/dotfiles_old for backup of any existing dotfiles in ~"
+    mkdir -p ~/dotfiles_old
 fi
+
 # Dotfiles directory
 dir=~/dotfiles
 
 # List of files to symlink in homedir
-files=".bashrc .vimrc .gitconfig .zshrc"
+files=".gitconfig .zshrc"
 
 # Move any existing dotfiles in homedir to dotfiles_old directory, then create symlinks 
 for file in $files; do
@@ -20,4 +22,4 @@ for file in $files; do
     ln -s $dir/$file ~/$file
 done
 
-#bash brew.sh
+bash brew.sh
