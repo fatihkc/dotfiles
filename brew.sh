@@ -26,6 +26,7 @@ brew install moreutils
 brew install findutils
 # Install a modern version of Bash.
 brew install bash
+brew install watch
 
 # Install GnuPG to enable PGP-signing commits.
 brew install gnupg
