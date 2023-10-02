@@ -61,6 +61,8 @@ brew install openshift-cli
 brew install --cask vagrant
 brew install ansible
 brew install --cask virtualbox
+brew install kind
+
 # DevSecOps 
 
 brew install trivy
