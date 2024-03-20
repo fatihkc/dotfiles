@@ -38,6 +38,7 @@ brew install openssh
 brew install screen
 brew install --cask iterm2
 brew install zsh
+brew install wget
 
 brew install git
 brew install ssh-copy-id
@@ -60,7 +61,7 @@ brew install --cask lens
 brew install openshift-cli
 brew install --cask vagrant
 brew install ansible
-brew install --cask virtualbox
+#brew install --cask virtualbox
 brew install kind
 
 # DevSecOps 
@@ -69,6 +70,7 @@ brew install trivy
 
 # Communication
 
+brew install --cask slack
 brew install --cask zoom
 brew install --cask microsoft-teams
 
